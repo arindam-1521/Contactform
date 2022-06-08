@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.myform {
+    display: flex;
+    flex-direction: column;
+    width: 47vw;
+    height: 100vh;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.myinput {
+    padding: 16px;
+    width: 40vw;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 45px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 3px .2px rgba(0, 0, 0, 0.414);
+    text-align: center;
+    display: inline;
+}
+
+.myinput:hover {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.467);
+}
+
+#header {
+    width: 87%;
+    text-align: center;
+    font-family: "Helvetica Neue";
+}
+
+.boto {
+    width: 60%;
+    padding: 12px;
+    margin: 12px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 78px;
+    border: none;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.567);
+    /* background-color: #00DBDE;
+    background-image: linear-gradient(45deg, #00DBDE 0%, #FC00FF 100%); */
+    border: 2px solid #28a745;
+    color: #28a745;
+    background: white;
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.342); */
+    font-weight: bold;
+}
+
+.boto:hover {
+    color: white;
+    background: #28a745;
+    box-shadow: 2.5px 2.5px 3px 1px rgba(0, 0, 0, 0.414);
+}
+
+.boto:active {
+    /* font-size: 26px; */
+    background: #2bc74f;
+    border: 2px solid #2bc74f;
+}
+
+#btnHolder {
+    display: flex;
+    width: 40vw;
+    justify-content: center;
+}
+
+#footer {
+    background-color: black;
+    padding: 8px;
+    font-family: "Helvetica Neue";
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.container {
+    /* background-color: blue; */
+}
+
+#svg {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* margin-top: 56px;
+    margin-left: 24px; */
+    margin: auto;
+}
+
+#svgi {
+    height: 519px;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.488))
+}
+
+.maincontainer {
+    display: flex;
+    background-color: #4158D0;
+    background: orange;
+}
