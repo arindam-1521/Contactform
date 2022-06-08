@@ -8,7 +8,8 @@ const connectionparams = {
     useUnifiedTopology: true,
 
 }
-mongoose.connect(process.env.MONGODB_URL || "mongodb+srv://joypradhan:SnLbw6q-p9dF6KS@cluster0.eqnuobf.mongodb.net/Myfirst?retryWrites=true&w=majority", connectionparams).then(() => { console.log("connected to the db") }).catch((e) => { console.log(e) })
+const uri = process.env.MONGODB_URI;
+mongoose.connect(uri || "mongodb+srv://joypradhan:SnLbw6q-p9dF6KS@cluster0.eqnuobf.mongodb.net/Myfirst?retryWrites=true&w=majority", connectionparams).then(() => { console.log("connected to the db") }).catch((e) => { console.log(e) })
 
 
 
@@ -27,6 +28,10 @@ app.use(express.urlencoded())
 app.set("view engine", "ejs")
 app.set("views", path.join(__dirname, "views"))
 
+app.get("/", (req, res) => {
+    const params = {}
+    console.log("Hello world")
+})
 app.get("/contact", (req, res) => {
     const params = {}
     res.render("contact.ejs", params)
