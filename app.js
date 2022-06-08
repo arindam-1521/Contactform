@@ -2,7 +2,7 @@ var express = require('express');
 var mongoose = require('mongoose');
 var path = require('path');
 const app = express();
-const port = 80;
+const port = 0;
 const connectionparams = {
         useNewUrlParser: true,
         useUnifiedTopology: true,
