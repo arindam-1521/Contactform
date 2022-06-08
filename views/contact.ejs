@@ -6,29 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mongoose Contact Form</title>
+    <link rel="stylesheet" href="/static/homepage.css">
     <link rel="stylesheet" href="/static/style.css" type="text/css">
 </head>
 
 <body>
-    <div class="maincontainer">
-        <div class="container">
-            <form action="/contact" method="post" class="myform">
-                <h1 id="header">Fill The Form Below</h1>
-                <input type="text" class="myinput" name="name" placeholder="Enter Your Name">
-                <input type="text" class="myinput" name="age" placeholder="Enter Your Age">
-                <input type="text" class="myinput" name="gender" placeholder="Enter Your Gender">
-                <input type="text" class="myinput" name="location" placeholder="Enter Your location">
-                <input type="text" class="myinput" name="description" placeholder="Enter Your Description">
-                <div id="btnHolder">
-                    <button class="boto">Submit</button>
-                </div>
-            </form>
-        </div>
-        <div id="svg">
-            <img id="svgi" src="static\img\Online Courses.svg" alt="">
-        </div>
+    <div class="boxc">
+        <ul class="box">
+            <img src="static/img/logo.svg" alt="" id="logo" srcset="">
+            <li class="listItem" id="index-1"> <a href="/" style="text-decoration:none; color: white">Home</a></li>
+            <li class="listItem" id="index-2"><a href="" style="text-decoration:none; color: white">About Us</a></li>
+            <li class="listItem" id="index-3"><a href="/contact" style="text-decoration:none; color: white">Contact Us</a></li>
+            <li class="listItem" id="index-5"><a href="" style="text-decoration:none; color: white">Email Us</a></li>
+            <li class="listItem" id="index-6"><a href="" style="text-decoration:none; color: white">Notes App</a></li>
+            <input class="search" type="text" placeholder="Search Here">
+        </ul>
     </div>
-    <footer id="footer">Copyright &#169; 2002&#x2013;2022 Magic Contact By Arindam</footer>
+</body>
+<div class="maincontainer">
+    <div class="container">
+        <form action="/contact" method="post" class="myform">
+            <h1 id="header">Fill The Form Below</h1>
+            <input type="text" class="myinput" name="name" placeholder="Enter Your Name">
+            <input type="text" class="myinput" name="age" placeholder="Enter Your Age">
+            <input type="text" class="myinput" name="gender" placeholder="Enter Your Gender">
+            <input type="text" class="myinput" name="location" placeholder="Enter Your location">
+            <input type="text" class="myinput" name="description" placeholder="Enter Your Description">
+            <div id="btnHolder">
+                <button class="boto">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div id="svg">
+        <img id="svgi" src="static\img\Online Courses.svg" alt="">
+    </div>
+</div>
+<footer id="footer">Copyright &#169; 2002&#x2013;2022 Magic Contact By Arindam</footer>
 </body>
 
 

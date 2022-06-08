@@ -4,12 +4,12 @@ var path = require('path');
 const app = express();
 const port = 80;
 const connectionparams = {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
 
-}
-const uri = process.env.MONGODB_URI;
-mongoose.connect(uri || "mongodb+srv://joypradhan:SnLbw6q-p9dF6KS@cluster0.eqnuobf.mongodb.net/Myfirst?retryWrites=true&w=majority", connectionparams).then(() => { console.log("connected to the db") }).catch((e) => { console.log(e) })
+    }
+    // const uri = process.env.MONGODB_URI;
+mongoose.connect("mongodb+srv://joypradhan:SnLbw6q-p9dF6KS@cluster0.eqnuobf.mongodb.net/Myfirst?retryWrites=true&w=majority", connectionparams).then(() => { console.log("connected to the db") }).catch((e) => { console.log(e) })
 
 
 
@@ -30,7 +30,7 @@ app.set("views", path.join(__dirname, "views"))
 
 app.get("/", (req, res) => {
     const params = {}
-    console.log("Hello world")
+    res.render("index.ejs", params)
 })
 app.get("/contact", (req, res) => {
     const params = {}
