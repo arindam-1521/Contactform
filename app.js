@@ -8,7 +8,7 @@ const connectionparams = {
     useUnifiedTopology: true,
 
 }
-mongoose.connect("mongodb+srv://joypradhan:SnLbw6q-p9dF6KS@cluster0.eqnuobf.mongodb.net/Myfirst?retryWrites=true&w=majority", connectionparams).then(() => { console.log("connected to the db") }).catch((e) => { console.log(e) })
+mongoose.connect(process.env.MONGODB_URL || "mongodb+srv://joypradhan:SnLbw6q-p9dF6KS@cluster0.eqnuobf.mongodb.net/Myfirst?retryWrites=true&w=majority", connectionparams).then(() => { console.log("connected to the db") }).catch((e) => { console.log(e) })
 
 
 
