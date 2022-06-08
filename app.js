@@ -2,7 +2,7 @@ var express = require('express');
 var mongoose = require('mongoose');
 var path = require('path');
 const app = express();
-const port = 3000;
+// const port = 3000;
 const connectionparams = {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -47,6 +47,4 @@ app.post("/contact", (req, res) => {
         // res.status(200).render("contact.pug")
 })
 
-app.listen(port, () => {
-    console.log(`The server started successfully on port ${port}`)
-})
+app.listen(process.env.PORT || 5000)
